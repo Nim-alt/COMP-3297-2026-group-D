@@ -28,9 +28,12 @@ BetaTrax is a defect tracking system developed using **Django 6.0.2** and **Djan
 5. View defect reports: Open http://127.0.0.1:8000/api/defects/<id>/ (e.g., http://127.0.0.1:8000/api/defects/1/) in your browser after logging in.
 6. View products: Open http://127.0.0.1:8000/api/products/<id>/ (e.g., http://127.0.0.1:8000/api/products/1/) in your browser after logging in.
 ## Limitations (Sprint 2)
-- Email notifications rely on a console backend in development
+- The function of sending emails has not been debugged yet. It's impossible to really send emails in real life
 - Comment system does not support editing or deleting comments
-- User groups must be manually created via Admin
+-The field named product_id in the source code actually represents the product name in practice. Separately, when a product is registered, a unique system-generated ID is automatically created. This system ID is used to open the corresponding product interface.
+
+
+
 
 
 ---
