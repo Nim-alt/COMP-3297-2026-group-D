@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 from defects.models import Defect, Product, Comment, DefectHistory
 
 
-class test_api(TestCase):
+class BaseAPITestCase(TestCase):
     
     def setUp(self):
         self.client = APIClient()
