@@ -167,50 +167,6 @@ Status Update:
                     )
                 except Exception as e:
                     print(f"Failed to send status notification to email: {e}")
-
-# # ==================== Email Notification ====================
-# @receiver(post_save, sender=Defect)
-# def send_defect_notification(sender, instance, created, **kwargs):
-
-#     if not instance.tester_email:
-#         return
-#     recipients = [email.strip() for email in instance.tester_email.split(',') if email.strip()]
-#     if not recipients:
-#         return
-
-#     if created:
-#         subject = f"BetaTrax - Defect #{instance.id} created"
-#         message = f"""
-# Defect Title: {instance.title}
-# Product: {instance.product.product_id} (v{instance.product.version})
-# Description: {instance.description}
-# Status: {instance.get_status_display()}
-#         """
-#     else:
-
-#         try:
-#             old_instance = Defect.objects.get(pk=instance.pk)
-#             old_status = old_instance.status
-#         except Defect.DoesNotExist:
-#             return
-#         if old_status == instance.status:
-#             return  
-#         subject = f"BetaTrax - Defect #{instance.id} status changed from {old_status} to {instance.get_status_display()}"
-#         message = f"""
-# Defect Title: {instance.title}
-# Product: {instance.product.product_id} (v{instance.product.version})
-# Description: {instance.description}
-# New Status: {instance.get_status_display()}
-#         """
-
-#     send_mail(
-#         subject=subject,
-#         message=message,
-#         from_email='betatrax@example.com',
-#         recipient_list=recipients,
-#         fail_silently=False,
-#     )
-# ==================== comment function ====================
 class Comment(models.Model):
     defect = models.ForeignKey(Defect, on_delete=models.CASCADE, related_name='comments')
     author = models.ForeignKey(User, on_delete=models.CASCADE)

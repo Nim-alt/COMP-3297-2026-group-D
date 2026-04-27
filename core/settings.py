@@ -95,7 +95,7 @@ DATABASES = {
         'ENGINE': 'django_tenants.postgresql_backend',   
         'NAME': 'betatrax_db',                           # name of database you created in pgAdmin
         'USER': 'postgres',
-        'PASSWORD': '',          # change to the password you use for pgAdmin
+        'PASSWORD': 'Tqwcxe20050812',          # change to the password you use for pgAdmin
         'HOST': 'localhost',
         'PORT': '5432',
     }
