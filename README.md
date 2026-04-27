@@ -71,7 +71,7 @@ For submission-ready API documentation, see [docs/API_DOCUMENTATION.md](docs/API
      ALTER USER betatrax_user CREATEDB;
      ```
 
-     *Note: Update line 67 in settings.py with the PASSWORD set to 'your_password'*
+     *Note: Update line 98 in settings.py with the PASSWORD set to 'your_password'*
 
 2. **Clone / unzip the project and create a virtual environment**
 
