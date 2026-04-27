@@ -35,8 +35,8 @@ For submission-ready API documentation, see [docs/API_DOCUMENTATION.md](docs/API
 
 ## Automation Test Instructions (Sprint 3)
 **Preconditions:**
-1) python/python3 intsalled
-2) have coverage installed (run `pip install coverage` to install coverage)
+1) Python/Python3 intsalled
+2) Coverage installed (run `pip install coverage` to install coverage)
 
 **Run Instructions(API Test):**
 1) Do [How to Run](#How-to-Run) Step 1 & 2
@@ -47,11 +47,11 @@ For submission-ready API documentation, see [docs/API_DOCUMENTATION.md](docs/API
 1) Run "python manage.py test defects.test_dev_metrics" for normal testing
 
 **Generate Coverage Report (Developer Metrics Classification Logic Test):**
-1) run `coverage run --source='defects' manage.py test defects.test_dev_metrics`
-2) run `coverage report --include="views.py"` to generate report
-3) run `coverage report -m --include="view.py"` to see how many line the testing misses
-4) run `coverage html --include="views.py"` to generate the report in html
-5) run `open htmlcov/index.html` / `xdg-open htmlcov/index.html` / `start htmlcov/index.html` to view report in `MacOS` / `Linux` / `Windows`
+1) Run `coverage run --source='defects' manage.py test defects.test_dev_metrics`
+2) Run `coverage report --include="views.py"` to generate report
+3) Run `coverage report -m --include="view.py"` to see how many line the testing misses
+4) Run `coverage html --include="views.py"` to generate the report in html
+5) Run `open htmlcov/index.html` / `xdg-open htmlcov/index.html` / `start htmlcov/index.html` to view report in `MacOS` / `Linux` / `Windows`
 
 
 ## Limitations (Sprint 3)
