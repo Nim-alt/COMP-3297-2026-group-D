@@ -57,6 +57,7 @@ For submission-ready API documentation, see [docs/API_DOCUMENTATION.md](docs/API
 
 ## Limitations (Sprint 3)
 
+1) **Incompatibility of test_api.py** -- The current version of automation test for all API endpoints only work for the Sprint 2 application (using SQLite). The program is unable to interact with the new SQL (PostgreSQL). Due to time constraints, we were unable to update the automation code for API test to be compatable with PostgreSQL and all API requests from test_api.py to the SQL returns a "404 not found" error.
 
 --
 ## How to Run PostgreSQL Multi-Tenants (Local Development)
